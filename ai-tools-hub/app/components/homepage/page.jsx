@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from "react"
 import { getTools } from "@/app/backend/server"
+import Card from "../card/page"
 
 export default function HomePage(){
 
@@ -30,6 +31,8 @@ export default function HomePage(){
         <input type ='text' className="rounded-md p-3 m-2 " placeholder="Search for tool"/>
       </div>
     </section>
+
+    <Card/>
     </>
   )
 }
