@@ -1,15 +1,17 @@
 'use client'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { getTools } from "@/app/backend/server"
 import Card from "../card/page"
 
 export default function HomePage(){
+   const [tools, setTools] = useState()
 
   useEffect(() => {
 
     async function getResources(){
       try{
       let data = await getTools()
+      setTools(data)
       console.log(data)
     }
     catch(err){
@@ -17,7 +19,7 @@ export default function HomePage(){
     }
     }
 
-    // getResources()
+    getResources()
   
   }, [])
   
@@ -32,7 +34,6 @@ export default function HomePage(){
       </div>
     </section>
 
-    <Card/>
     </>
   )
 }
