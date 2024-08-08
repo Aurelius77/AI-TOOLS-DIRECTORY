@@ -14,7 +14,7 @@ export default function Card({tool}) {
       </div>
       <div className="w-full md:w-1/4 flex flex-col items-center p-3">
         <p className="m-2 text-center text-sm text-blue-500">
-              {tool.categories.reduce((acc, category, index) => 
+              {tool.categories?? tool.categories.reduce((acc, category, index) => 
     acc === null ? [category] : [...acc, ' # ', category], null)}
           </p>
 

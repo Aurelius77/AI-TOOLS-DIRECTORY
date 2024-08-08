@@ -129,6 +129,8 @@ export default function HomePage() {
       }
    };
 
+   
+
    const resources = searchTools.length > 0 ? searchTools : currentTools;
 
    return (
@@ -155,7 +157,9 @@ export default function HomePage() {
    <div className="flex gap-4 items-center">
       {categories.length > 0 ? (
           categories.map((category) => (
-             <div key={category} className="cursor-pointer bg-white p-3 rounded-lg shadow-md min-w-[100px] text-center flex-shrink-0">
+             <div key={category}
+              className="cursor-pointer bg-white p-3 rounded-lg shadow-md min-w-[100px] text-center flex-shrink-0"
+              >
                <p className="text-gray-700">{category}</p>
              </div>
           ))
@@ -164,8 +168,6 @@ export default function HomePage() {
       )}
    </div>
 </section>
-
-
 
 
          <section className="tools-grid grid grid-cols-1 gap-4 p-5">
