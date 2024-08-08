@@ -26,3 +26,30 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* For WebKit browsers (Chrome, Safari) */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  /* Width of the scrollbar */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: white;
+  /* Thumb color */
+  border-radius: 8px;
+  /* Rounded corners for the thumb */
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+  /* No visible track background */
+}
+
+/* For Firefox */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  /* Thin scrollbar */
+  scrollbar-color: white transparent;
+  /* Thumb and no track color */
+}
