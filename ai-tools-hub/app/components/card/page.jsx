@@ -8,27 +8,27 @@ export default function Card({tool}) {
       <div className="w-full md:w-1/4 border border-gray-300 rounded-md overflow-hidden">
         <img
           className="w-full h-full object-cover"
-          src={tool.imageURL}
+          src={tool.imageURL? tool.imageURL : ''}
           alt="AI tool screenshot"
         />
       </div>
       <div className="w-full md:w-1/4 flex flex-col items-center p-3">
         <p className="m-2 text-center text-sm text-blue-500">
-              {tool.categories?? tool.categories.reduce((acc, category, index) => 
-    acc === null ? [category] : [...acc, ' # ', category], null)}
+              {tool.categories? tool.categories.reduce((acc, category, index) => 
+    acc === null ? [category] : [...acc, ' # ', category], null) : ''}
           </p>
 
       </div>
       <div className="w-full md:w-4/12 flex flex-col items-center p-3">
-        <p className="m-2 text-lg font-bold">{tool.title}</p>
+        <p className="m-2 text-lg font-bold">{tool.title ? tool.title: ''}</p>
         <p className="text-sm text-center">
-         {tool.description}
+         {tool.description ? tool.description: ''}
         </p>
       </div>
       <div className="w-full md:w-1/6 flex flex-col items-center p-3">
         <p className="font-semibold">{tool.pricingType? tool.pricingType : ''}</p>
         <p className="mb-2">{tool.pricingPrice? tool.pricingPrice : ''}</p>
-        <button className="bg-blue-600 text-white rounded-md px-4 py-2 hover:bg-blue-700 transition"><Link href={tool.visitLink}>Visit site</Link></button>
+        <button className="bg-blue-600 text-white rounded-md px-4 py-2 hover:bg-blue-700 transition"><Link href={tool.visitLink? tool.visitLink:''}>Visit site</Link></button>
       </div>
     </div>
     </div>
