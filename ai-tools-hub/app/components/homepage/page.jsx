@@ -9,6 +9,7 @@ export default function HomePage() {
    const [searchTools, setSearchTools] = useState([]);
    const [term, setTerm] = useState('');
    const [categories, setCategories] = useState([]);
+   const [selectedCategory, setSelectedCategory] = useState('')
    const itemsPerPage = 10;
 
    useEffect(() => {
@@ -129,6 +130,24 @@ export default function HomePage() {
       }
    };
 
+   function filterCategory(category){
+      if(category == 'All'){
+         setSelectedCategory('All')
+         setSearchTools(tools)
+         return
+      }
+        if(selectedCategory === category){
+         setSelectedCategory('')
+          setSearchTools(tools)
+        }
+        else{
+          const searchResults = tools.filter((tool)=> tool.categories.includes(category))
+          console.log('selected')
+          setSelectedCategory(category)
+          setSearchTools(searchResults)
+        }
+   }
+
    
 
    const resources = searchTools.length > 0 ? searchTools : currentTools;
@@ -154,20 +173,28 @@ export default function HomePage() {
          </section>
 
         <section className="mt-8 w-full flex overflow-x-auto pb-4 scrollbar-thin">
-   <div className="flex gap-4 items-center">
-      {categories.length > 0 ? (
-          categories.map((category) => (
-             <div key={category}
-              className="cursor-pointer bg-white p-3 rounded-lg shadow-md min-w-[100px] text-center flex-shrink-0"
-              >
-               <p className="text-gray-700">{category}</p>
-             </div>
-          ))
-      ) : (
-          <h1 className="text-gray-500 italic">No categories...</h1>
-      )}
-   </div>
+    <div className="flex gap-4 items-center">
+        <div
+            className={`cursor-pointer bg-white p-3 rounded-lg shadow-md min-w-[100px] text-center flex-shrink-0 ${selectedCategory === 'All' ? 'bg-black text-white' : ''}`}
+            onClick={() => { filterCategory('All') }}
+        >
+            <p className={`${selectedCategory === 'All' ? 'text-white' : 'text-gray-700'}`}>All</p>
+        </div>
+        {categories.length > 0 ? (
+            categories.map((category, index) => (
+                <div key={index}
+                    className={`cursor-pointer bg-white p-3 rounded-lg shadow-md min-w-[100px] text-center flex-shrink-0 ${selectedCategory === category ? 'bg-black text-white' : ''}`}
+                    onClick={() => { filterCategory(category) }}
+                >
+                    <p className={`${selectedCategory === category ? 'text-white' : 'text-gray-700'}`}>{category}</p>
+                </div>
+            ))
+        ) : (
+            ''
+        )}
+    </div>
 </section>
+
 
 
          <section className="tools-grid grid grid-cols-1 gap-4 p-5">
