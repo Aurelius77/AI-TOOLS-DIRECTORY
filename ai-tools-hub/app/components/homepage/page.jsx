@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
-import Card from "../card/page";
+import Card from "../Card";
 import { toolsData } from "@/app/backend/tools";
 
 export default function HomePage() {
