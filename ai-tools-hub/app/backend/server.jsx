@@ -5,12 +5,12 @@ const uri = process.env.MONGO_URI;
 
 const client = new MongoClient(uri);
 
-export async function getTools(){
+export async function addTools(formData){
     try{
         await client.connect()
-        let db = client.db('Resources').collection('AITools')
-        const data = await db.find().toArray()
-        return {success:true, data:data}
+        let db = client.db('Resources').collection('Tools')
+        await db.insertMany(formData)
+        return {success:true, message:'Tool has been submitted'}
     }
     catch(err){
         console.log(err)
