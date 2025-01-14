@@ -10,7 +10,7 @@ export default function Dashboard() {
     return (
         <>
             <nav className="p-5 flex items-center justify-between">
-                <h1 className="text-white text-3xl m-2 p-2">AI Hub</h1>
+                <h1 className="text-white text-3xl m-2 p-2"><Link href='./'>AI Hub</Link></h1>
                 <ul className=" hidden md:flex text-white items-center justify-between text-lg">
                     <li className='m-5'><Link href='./submit'>Submit Tool</Link></li>
                     <li className='m-5'><Link href='./contact'>Contact</Link></li>
