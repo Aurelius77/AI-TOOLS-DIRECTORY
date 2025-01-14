@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Card({tool}) {
@@ -14,8 +13,9 @@ export default function Card({tool}) {
       </div>
       <div className="w-full md:w-1/4 flex flex-col items-center p-3">
         <p className="m-2 text-center text-sm text-blue-500">
-              {tool.categories? tool.categories.reduce((acc, category, index) => 
-    acc === null ? [category] : [...acc, ' # ', category], null) : ''}
+              {Array.isArray(tool.categories) 
+          ? tool.categories.join(' # ')
+          : (typeof tool.categories === 'string' ? tool.categories : '')}
           </p>
 
       </div>
