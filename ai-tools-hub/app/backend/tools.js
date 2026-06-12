@@ -5512,5 +5512,24 @@ export const toolsData = [
         "pricingType": "FreemiumTrial",
         "pricingPrice": "from $19 / mo",
         "visitLink": "https://www.insidr.ai/aff/neuralframes"
+    },
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c241"
+        },
+        "number": 398,
+        "title": "ImagineClip",
+        "description": "ImagineClip is an AI video generator for social clips, avatar videos, and stylized visual effects. New users receive 50 free credits upon registration.",
+        "imageUrl": "https://imagineclip.com/og.png",
+        "categories": [
+            "#Text to Video AI",
+            "#AI Social Media",
+            "#AI Marketing",
+            "#Free AI Tools",
+            "#AI Video Tools"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Free signup credits",
+        "visitLink": "https://imagineclip.com"
     }
 ]
