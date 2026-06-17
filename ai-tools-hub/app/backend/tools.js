@@ -5512,5 +5512,22 @@ export const toolsData = [
         "pricingType": "FreemiumTrial",
         "pricingPrice": "from $19 / mo",
         "visitLink": "https://www.insidr.ai/aff/neuralframes"
+    },
+    {
+        "_id": {
+            "$oid": "66b300000000000000000001"
+        },
+        "Number": 405,
+        "title": "Remio",
+        "description": "Remio is a local-first AI memory and knowledge base desktop app for users and agents. It parses files, webpages, recordings, emails, messages, images, and notes into local indexes and vectors so AI workflows can retrieve focused context instead of repeatedly scanning folders or loading whole documents into prompts.",
+        "imageURL": "https://remio.ai/favicon.ico",
+        "categories": [
+            "#AI Productivity Tools",
+            "#AI Automation Tools",
+            "#AI Assistant"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "See website",
+        "visitLink": "https://remio.ai/"
     }
 ]
