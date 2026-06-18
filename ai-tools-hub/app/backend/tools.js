@@ -5512,5 +5512,18 @@ export const toolsData = [
         "pricingType": "FreemiumTrial",
         "pricingPrice": "from $19 / mo",
         "visitLink": "https://www.insidr.ai/aff/neuralframes"
+    },
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c241"
+        },
+        "number": 398,
+        "title": "Roblox GUI Maker",
+        "description": "Free AI-assisted Roblox Studio GUI planner for ScreenGui layouts, HUDs, menus, inventories, admin panels, and Lua UI starter-code ideas.",
+        "imageURL": "https://res.cloudinary.com/dqp362rzh/image/upload/v1781751810/bihytjivjlx3d4fd50jy.png",
+        "categories": ["AI Coding", "AI Game Development", "AI UI Generator"],
+        "pricingType": "Free",
+        "pricingPrice": "$0",
+        "visitLink": "https://robloxguimaker.dev/"
     }
 ]
