@@ -30,6 +30,18 @@ export const toolsData = [
     },
     {
         "_id": {
+            "$oid": "66b1fa668e00ede961e43001"
+        },
+        "title": "Tudo",
+        "description": "Tudo is an AI task manager for iPhone that turns voice notes, screenshots, shared content, and goals into organized tasks for personal planning and productivity.",
+        "imageURL": "https://blynkai.app/favicon.ico",
+        "categories": ["AI Assistant", "AI Productivity Tools"],
+        "pricingType": "Free",
+        "pricingPrice": "Free",
+        "visitLink": "https://blynkai.app/tudo/"
+    },
+    {
+        "_id": {
             "$oid": "66b1fa668e00ede961e42e5e"
         },
         "title": "Leap",
@@ -358,6 +370,18 @@ export const toolsData = [
         "pricingType": "N/A",
         "pricingPrice": "N/A",
         "visitLink": "https://www.insidr.ai/aff/wellmeright"
+    },
+    {
+        "_id": {
+            "$oid": "66b1fa9b8e00ede961e43002"
+        },
+        "title": "Telo",
+        "description": "Telo is an AI wellness companion for iPhone that uses Apple Health context and daily logs to reflect on readiness, recovery, sleep, and body-state trends.",
+        "imageURL": "https://blynkai.app/favicon.ico",
+        "categories": ["Health AI", "AI Assistant"],
+        "pricingType": "Free",
+        "pricingPrice": "Free",
+        "visitLink": "https://blynkai.app/telo/"
     },
     {
         "_id": {
