@@ -1,0 +1,187 @@
+ai-tools-hub/app/backend/server.jsx
+  s_6eaaf081909a11::t_45b1e9f8a1b144 16,19,29
+  s_6eaaf081909a11::t_c1fc183ff6b764 3,5-6,8-9,11-15,17-18,20-28,31-62
+ai-tools-hub/app/globals.css
+  s_cabce79e9cb900::t_a1ed85f402a8d8 28-33,35-36,39,46-51,58,61
+  s_6eaaf081909a11::t_079e525984f1a6 6-8,11-12,16,18-19,62
+  s_6eaaf081909a11::t_043434fa297a9e 34,37,41
+ai-tools-hub/app/components/Dashboard.jsx
+  s_6eaaf081909a11::t_0600d0fde89556 2,5,8-12,15,18-32,34-43,46-61,63-70,75
+ai-tools-hub/app/components/HomePage.jsx
+  s_6eaaf081909a11::t_cf5d8cb6d76c1e 2,4,7,9,28,37-44,46-50,53-77,79,134-149,151-153,156-161,164-172,174-176,179-182,186-197,214-222,225-228,232,235
+  s_6eaaf081909a11::t_87c9f6b13327ae 3,29-30,51-52,81-82,84-86,93-94,96,98,101-103,106,108,110-112,116-122,124-133,198-210
+  s_cabce79e9cb900::t_b29503facda069 8
+  s_cabce79e9cb900::t_cfdf37f9c520df 33-36
+  s_cabce79e9cb900::t_9b27364bbb7592 14
+  s_cabce79e9cb900::t_89836772c4fb67 10-13,16-19,21
+  s_cabce79e9cb900::t_98dc5fe5cd321e 88-91,97,104-105,109
+  s_cabce79e9cb900::t_e996d700cff113 15,20,22-23
+ai-tools-hub/app/layout.js
+  s_6eaaf081909a11::t_d35748d6672007 11
+ai-tools-hub/app/submit/page.jsx
+  s_6eaaf081909a11::t_ff9c455a057558 2,6-58,60-182,188-189
+  s_6eaaf081909a11::t_020e28c3b32e2a 5
+ai-tools-hub/app/components/Card.jsx
+  s_6eaaf081909a11::t_369ca331ee9100 3-8,10-22,25-41,44-64,66
+ai-tools-hub/app/contact/page.jsx
+  s_6eaaf081909a11::t_020e28c3b32e2a 5
+  s_6eaaf081909a11::t_317ca1d91d92ac 2,4,8-54,56-62,64-136,143-144
+ai-tools-hub/app/page.js
+  s_6eaaf081909a11::t_020e28c3b32e2a 1-2,11
+ai-tools-hub/next.config.mjs
+  s_6eaaf081909a11::t_9dbb2e9e23daab 2-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "autter_version": "1.6.7",
+  "base_commit_sha": "cca7948280b2175addf99aeeab9315c3c69f218e",
+  "branch": "main",
+  "prompts": {
+    "s_6eaaf081909a11": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00b05-e47c-7820-896b-d4eac0af8488",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Aurelius <akinpeluifeoluwa007@gmail.com>",
+      "messages_url": "cas:3acbce4b810dc598d6d5bcd37de864e10e1a3e876491445d3eaaa180a45144b9",
+      "total_additions": 1055,
+      "total_deletions": 896,
+      "accepted_lines": 781,
+      "overriden_lines": 0
+    },
+    "s_cabce79e9cb900": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5063cf77-9c24-4cc5-95c5-918b3b3cedf1",
+        "model": "MaaS_Cl_Opus_4.8_20260528_cache"
+      },
+      "human_author": "Aurelius <akinpeluifeoluwa007@gmail.com>",
+      "messages_url": "cas:41c6efb6a51b7ed387de4a8f36253f4834e9fab0e3492c4b973902a4f4e96f39",
+      "total_additions": 58,
+      "total_deletions": 34,
+      "accepted_lines": 46,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_6eaaf081909a11": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00b05-e47c-7820-896b-d4eac0af8488",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Aurelius <akinpeluifeoluwa007@gmail.com>",
+      "messages_url": "cas:3acbce4b810dc598d6d5bcd37de864e10e1a3e876491445d3eaaa180a45144b9",
+      "stats": {
+        "total_additions": 1055,
+        "total_deletions": 896,
+        "accepted_lines": 781,
+        "overriden_lines": 0,
+        "files": {
+          "ai-tools-hub/app/backend/server.jsx": {
+            "total_additions": 64,
+            "total_deletions": 24,
+            "accepted_lines": 62,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/components/Card.jsx": {
+            "total_additions": 68,
+            "total_deletions": 36,
+            "accepted_lines": 68,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/components/Dashboard.jsx": {
+            "total_additions": 75,
+            "total_deletions": 0,
+            "accepted_lines": 75,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/components/HomePage.jsx": {
+            "total_additions": 231,
+            "total_deletions": 19,
+            "accepted_lines": 209,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/components/dashboard/page.jsx": {
+            "total_additions": 75,
+            "total_deletions": 107,
+            "accepted_lines": 0,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/components/homepage/page.jsx": {
+            "total_additions": 166,
+            "total_deletions": 381,
+            "accepted_lines": 0,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/contact/page.jsx": {
+            "total_additions": 145,
+            "total_deletions": 156,
+            "accepted_lines": 144,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/globals.css": {
+            "total_additions": 21,
+            "total_deletions": 13,
+            "accepted_lines": 14,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/layout.js": {
+            "total_additions": 1,
+            "total_deletions": 4,
+            "accepted_lines": 1,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/page.js": {
+            "total_additions": 3,
+            "total_deletions": 3,
+            "accepted_lines": 3,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/submit/page.jsx": {
+            "total_additions": 190,
+            "total_deletions": 152,
+            "accepted_lines": 189,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/next.config.mjs": {
+            "total_additions": 16,
+            "total_deletions": 1,
+            "accepted_lines": 16,
+            "overriden_lines": 0
+          }
+        }
+      }
+    },
+    "s_cabce79e9cb900": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5063cf77-9c24-4cc5-95c5-918b3b3cedf1",
+        "model": "MaaS_Cl_Opus_4.8_20260528_cache"
+      },
+      "human_author": "Aurelius <akinpeluifeoluwa007@gmail.com>",
+      "messages_url": "cas:41c6efb6a51b7ed387de4a8f36253f4834e9fab0e3492c4b973902a4f4e96f39",
+      "stats": {
+        "total_additions": 58,
+        "total_deletions": 34,
+        "accepted_lines": 46,
+        "overriden_lines": 0,
+        "files": {
+          "ai-tools-hub/app/components/HomePage.jsx": {
+            "total_additions": 40,
+            "total_deletions": 15,
+            "accepted_lines": 28,
+            "overriden_lines": 0
+          },
+          "ai-tools-hub/app/globals.css": {
+            "total_additions": 18,
+            "total_deletions": 19,
+            "accepted_lines": 18,
+            "overriden_lines": 0
+          }
+        }
+      }
+    }
+  }
+}
