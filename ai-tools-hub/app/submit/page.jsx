@@ -1,151 +1,189 @@
 'use client'
+
 import { useState } from "react";
 import { addTools } from "../backend/server";
-import Dashboard from "../components/dashboard/page";
+import Dashboard from "../components/Dashboard";
 
-export default function Submit(){
-     const [formData, setFormData] = useState({
-            toolName : '',
-            description : '',
-            websiteURL : '',
-            categories : '',
-            logo : ''
-        
-    })
-    const [loading, setLoading] = useState(false)
-    const [modalText, setModalText] = useState('')
-    const [modal, setModal] = useState(false)
+const initialFormData = {
+  title: '',
+  description: '',
+  visitLink: '',
+  imageURL: '',
+  categories: '',
+  pricingType: 'Freemium',
+  pricingPrice: '',
+};
 
-     async function handleSubmit(e){
-        e.preventDefault()
-        setLoading(true)
-        try{
-            const response = await addTools([formData])
-            setModalText(response.message)
-            
-        }
-        catch(err){
-            setModalText('Something went wrong. Check network settings or try again')
-        }
-        finally{
-            setModal(!modal) 
-            setLoading(false)
-            
-        }
-        
-     }
+export default function Submit() {
+  const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
+  const [modalText, setModalText] = useState('');
+  const [modal, setModal] = useState(false);
 
-     function handleInputChange(e){
-      const { name, value } = e.target;
-      setFormData({
-         ...formData,
-         [name]: value,
-      });
-   };
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setLoading(true);
 
-   function handleFileChange(e){
-      const file = e.target.files[0]
-      setFormData({
-        ...formData,
-        logo : file
-      })
-   }
+    const payload = {
+      ...formData,
+      categories: formData.categories
+        .split(',')
+        .map((category) => category.trim())
+        .filter(Boolean),
+    };
 
-   function closePopup(){
-     setModal(!modal)
-     formData.categories = ''
-     formData.description = ''
-     formData.logo = ''
-     formData.toolName = ''
-     formData.websiteURL= ''
-   }
+    try {
+      const response = await addTools([payload]);
+      setModalText(response.message);
 
-   return(
+      if (response.success) {
+        setFormData(initialFormData);
+      }
+    } catch (err) {
+      setModalText('Something went wrong. Check network settings or try again.');
+    } finally {
+      setModal(true);
+      setLoading(false);
+    }
+  }
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    setFormData((current) => ({
+      ...current,
+      [name]: value,
+    }));
+  }
+
+  return (
     <>
-      <Dashboard/>
-      <section className="max-w-xl mx-auto p-8 bg-white rounded-lg shadow-lg mt-10">
-  <h1 className="text-3xl font-bold text-center mb-6 text-gray-600">Submit a Tool</h1>
-  <p className="text-center text-gray-600 mb-8">Share your AI tool with the community</p>
+      <Dashboard />
+      <main className="mx-auto w-full max-w-2xl px-4 pb-12">
+        <section className="mt-8 rounded-lg border border-white/25 bg-white p-6 text-slate-900 shadow-xl md:p-8">
+          <div className="mb-8 text-center">
+            <h1 className="text-3xl font-bold">Submit a Tool</h1>
+            <p className="mt-2 text-sm text-slate-600">Share an AI tool with the community.</p>
+          </div>
 
-  <form onSubmit={handleSubmit}>
-    <div className="mb-4">
-      <label className="block text-gray-700 font-semibold mb-2">Tool Name*</label>
-      <input type="text"
-       className="w-full px-4 py-2 border rounded-lg focus:outline-none text-black focus:ring-2 focus:ring-blue-500" 
-       value ={formData.toolName}
-       name = 'toolName'
-       onChange={handleInputChange}
-       />
-    </div>
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
+              <label htmlFor="title" className="mb-2 block text-sm font-semibold text-slate-700">Tool Name*</label>
+              <input
+                id="title"
+                required
+                type="text"
+                className="w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                value={formData.title}
+                name="title"
+                onChange={handleInputChange}
+              />
+            </div>
 
-    <div className="mb-4">
-      <label className="block text-gray-700 font-semibold mb-2">Description*</label>
-      <textarea 
-      className="w-full px-4 py-2 text-black  border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-       rows="4"
-       value ={formData.description}
-       name ='description'
-       onChange= {handleInputChange}
-       ></textarea>
-    </div>
+            <div>
+              <label htmlFor="description" className="mb-2 block text-sm font-semibold text-slate-700">Description*</label>
+              <textarea
+                id="description"
+                required
+                className="min-h-32 w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                value={formData.description}
+                name="description"
+                onChange={handleInputChange}
+              />
+            </div>
 
-    <div className="mb-4">
-      <label className="block text-gray-700 font-semibold mb-2">Website URL*</label>
-      <input 
-      type="url"
-      className="w-full px-4 py-2 border text-black  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-      value = {formData.websiteURL}
-      name = 'websiteURL'
-      onChange= {handleInputChange}
-      />
-    </div>
+            <div>
+              <label htmlFor="visitLink" className="mb-2 block text-sm font-semibold text-slate-700">Website URL*</label>
+              <input
+                id="visitLink"
+                required
+                type="url"
+                className="w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                value={formData.visitLink}
+                name="visitLink"
+                onChange={handleInputChange}
+              />
+            </div>
 
-    <div className="mb-4">
-      <label className="block text-gray-700 font-semibold mb-2">Upload Logo/Image</label>
-      <input type="file" 
-      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      name = 'logo'
-      value={formData.logo}
-      onChange={handleFileChange}
-       />
-      <div className="mt-2">
-        <img src="#" alt="Preview" className="w-20 h-20 object-cover rounded-lg" />
-      </div>
-    </div>
+            <div>
+              <label htmlFor="imageURL" className="mb-2 block text-sm font-semibold text-slate-700">Logo or Screenshot URL</label>
+              <input
+                id="imageURL"
+                type="url"
+                className="w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                value={formData.imageURL}
+                name="imageURL"
+                onChange={handleInputChange}
+                placeholder="https://example.com/image.png"
+              />
+            </div>
 
-    
-    <div className="mb-8">
-      <label className="block text-gray-700 font-semibold mb-2">Categories (optional)</label>
-      <input type="text"
-       className="w-full px-4 py-2 border text-black  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-       onChange= {handleInputChange}
-       value={formData.categories}
-       name = 'categories'
-       />
-      <p className="text-xs text-gray-500 mt-2">Category tags help users find your tool more easily.</p>
-    </div>
+            <div>
+              <label htmlFor="categories" className="mb-2 block text-sm font-semibold text-slate-700">Categories</label>
+              <input
+                id="categories"
+                type="text"
+                className="w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                onChange={handleInputChange}
+                value={formData.categories}
+                name="categories"
+                placeholder="AI Writing Tools, AI Productivity Tools"
+              />
+              <p className="mt-2 text-xs text-slate-500">Separate categories with commas.</p>
+            </div>
 
-    <button type="submit" 
-    className={`${loading ? 'bg-gray-600 cursor-not-allowed' : ''} w-full bg-blue-500 text-white font-semibold py-3 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500`}>
-      {loading ? 'Submitting...' : 'Submit Tool'}
-    </button>
-  </form>
-</section>
+            <div className="grid gap-5 md:grid-cols-2">
+              <div>
+                <label htmlFor="pricingType" className="mb-2 block text-sm font-semibold text-slate-700">Pricing Type</label>
+                <select
+                  id="pricingType"
+                  name="pricingType"
+                  value={formData.pricingType}
+                  onChange={handleInputChange}
+                  className="w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                >
+                  <option>Free</option>
+                  <option>Freemium</option>
+                  <option>Trial</option>
+                  <option>Paid</option>
+                  <option>Contact for pricing</option>
+                </select>
+              </div>
 
+              <div>
+                <label htmlFor="pricingPrice" className="mb-2 block text-sm font-semibold text-slate-700">Starting Price</label>
+                <input
+                  id="pricingPrice"
+                  type="text"
+                  className="w-full rounded-md border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                  value={formData.pricingPrice}
+                  name="pricingPrice"
+                  onChange={handleInputChange}
+                  placeholder="from $9 / mo"
+                />
+              </div>
+            </div>
 
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full rounded-md bg-sky-600 py-3 font-semibold text-white transition hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-300 disabled:cursor-not-allowed disabled:bg-slate-500"
+            >
+              {loading ? 'Submitting...' : 'Submit Tool'}
+            </button>
+          </form>
+        </section>
+      </main>
 
-
-{modal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-white rounded-md z-50">
-          <div className="bg-primary p-5 rounded-md shadow-lg">
-            <p className='text text-green-500 m-3 p-3'>{modalText}</p>
-            <button onClick={closePopup} className="mt-3 bg-green-600 text-white text-primary p-3 rounded-md">
-              Finish
+      {modal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 px-4">
+          <div className="w-full max-w-sm rounded-lg bg-white p-6 text-center text-slate-900 shadow-2xl">
+            <p className="text-base font-semibold">{modalText}</p>
+            <button onClick={() => setModal(false)} className="mt-5 rounded-md bg-sky-600 px-5 py-2 text-sm font-semibold text-white hover:bg-sky-700">
+              Close
             </button>
           </div>
         </div>
       )}
-
     </>
-   )
+  )
 }
