@@ -5555,5 +5555,109 @@ export const toolsData = [
         "pricingType": "Freemium",
         "pricingPrice": "Free signup credits",
         "visitLink": "https://imagineclip.com"
+    },
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c242"
+        },
+        "number": 399,
+        "title": "AI Product Scout",
+        "description": "AI Product Scout is a bilingual archive of AI product commercialization cases, market signals, pricing notes, and product strategy research. It helps founders, product managers, builders, and researchers compare positioning, monetization patterns, launch angles, target users, and market signals across AI products.",
+        "imageUrl": "",
+        "categories": [
+            "#AI Research",
+            "#Product Strategy",
+            "#Startup Tools",
+            "#AI Product Strategy"
+        ],
+        "pricingType": "Free",
+        "pricingPrice": "Free",
+        "visitLink": "https://product.ferryman.app/"
+    },
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c243"
+        },
+        "number": 400,
+        "title": "SocialEcho",
+        "description": "SocialEcho is an AI-powered workspace for content creation and publishing, comment and direct-message management, social listening, analytics, and automation across 11 major international social platforms through official APIs.",
+        "imageUrl": "",
+        "categories": [
+            "#AI Marketing",
+            "#AI Social Media",
+            "#AI Productivity Tools",
+            "#Social Media Management"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Freemium",
+        "visitLink": "https://www.socialecho.cn/"
+    },
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c244"
+        },
+        "number": 401,
+        "title": "TANCO SkillHub",
+        "description": "TANCO SkillHub is a public hub of reusable AI workflow Skills featuring concrete implementations for evidence review, modular delivery, handoff, chained execution, guardrails, and paid Skill workflow gates. It provides reusable prompting systems, agent workflows, and operational templates for effective AI skill management.",
+        "imageUrl": "",
+        "categories": [
+            "#AI Agent Directories",
+            "#Skill Marketplace",
+            "#Workflow Automation",
+            "#AI Tools Directories"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Freemium",
+        "visitLink": "https://skillhub.cn/enterprise/org-j3zmzop1?publisher=%E5%94%90%E5%8F%AF%E5%88%9B%E7%A0%94"
+    },
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c245"
+        },
+        "number": 402,
+        "title": "InnerCanvas",
+        "description": "InnerCanvas is an AI-guided drawing reflection tool for private self-awareness and journaling. It turns drawing prompts such as House-Tree-Person, Tree, Draw-a-Person, and Person in the Rain into carefully crafted AI-guided reflection reports. It is explicitly non-diagnostic and not a clinical assessment, screening, treatment, or crisis-support tool.",
+        "imageUrl": "",
+        "categories": [
+            "#AI Self-Reflection",
+            "#AI Productivity Tools",
+            "#AI Journaling",
+            "#Mental Wellness"
+        ],
+        "pricingType": "Free",
+        "pricingPrice": "Free",
+        "visitLink": "https://innercanvas.app"
+    },
+
+    {
+        "_id": {
+            "$oid": "66b300000000000000000001"
+        },
+        "number": 403,
+        "title": "Remio",
+        "description": "Remio is a local-first AI memory and knowledge base desktop app for users and agents. It parses files, webpages, recordings, emails, messages, images, and notes into local indexes and vectors so AI workflows can retrieve focused context instead of repeatedly scanning folders or loading whole documents into prompts.",
+        "imageURL": "https://remio.ai/favicon.ico",
+        "categories": [
+            "#AI Productivity Tools",
+            "#AI Automation Tools",
+            "#AI Assistant"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "See website",
+        "visitLink": "https://remio.ai/"
+    },
+
+    {
+        "_id": {
+            "$oid": "66b222efbb56d1119ff6c241"
+        },
+        "number": 404,
+        "title": "Roblox GUI Maker",
+        "description": "Free AI-assisted Roblox Studio GUI planner for ScreenGui layouts, HUDs, menus, inventories, admin panels, and Lua UI starter-code ideas.",
+        "imageURL": "https://res.cloudinary.com/dqp362rzh/image/upload/v1781751810/bihytjivjlx3d4fd50jy.png",
+        "categories": ["AI Coding", "AI Game Development", "AI UI Generator"],
+        "pricingType": "Free",
+        "pricingPrice": "$0",
+        "visitLink": "https://robloxguimaker.dev/"
     }
 ]
