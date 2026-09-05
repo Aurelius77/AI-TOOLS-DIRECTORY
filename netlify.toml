@@ -1,0 +1,4 @@
+[build]
+  base = "ai-tools-hub"
+  command = "npm run build"
+  publish = ".next"
