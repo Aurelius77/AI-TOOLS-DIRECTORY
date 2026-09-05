@@ -5659,5 +5659,22 @@ export const toolsData = [
         "pricingType": "Free",
         "pricingPrice": "$0",
         "visitLink": "https://robloxguimaker.dev/"
+    },
+    {
+        "_id": {
+            "$oid": "fabf67d7d2e9ad799eed0026"
+        },
+        "number": 405,
+        "title": "Agent QA",
+        "description": "Natural-language web, Android and iOS application testing with execution memory, a local dashboard and MCP tools for authoring tests, running suites and inspecting results.",
+        "imageURL": "",
+        "categories": [
+            "AI Developer Tools",
+            "AI Automation Tools",
+            "AI Agents"
+        ],
+        "pricingType": "Source available (FSL-1.1-ALv2)",
+        "pricingPrice": "No software fee for permitted use; provider costs separate.",
+        "visitLink": "https://vostride.com/docs/agent-qa"
     }
 ]
