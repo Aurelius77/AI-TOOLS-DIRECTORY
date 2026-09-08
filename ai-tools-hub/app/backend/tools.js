@@ -5676,5 +5676,22 @@ export const toolsData = [
         "pricingType": "Source available (FSL-1.1-ALv2)",
         "pricingPrice": "No software fee for permitted use; provider costs separate.",
         "visitLink": "https://vostride.com/docs/agent-qa"
+    },
+    {
+        "_id": {
+            "$oid": "6a9f96cb0c902d60a9567986"
+        },
+        "number": 406,
+        "title": "YYLO",
+        "description": "Open-source command-line orchestrator for coding agents with Pi and Codex subagents, a dedicated branch/worktree per task, and typed task, validation, merge, and release-readiness boundaries.",
+        "imageURL": "",
+        "categories": [
+            "AI Developer Tools",
+            "AI Automation Tools",
+            "AI Agents"
+        ],
+        "pricingType": "Open Source (MIT)",
+        "pricingPrice": "Free",
+        "visitLink": "https://github.com/yylo-dev/yylo"
     }
 ]
