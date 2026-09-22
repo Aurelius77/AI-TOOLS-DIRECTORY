@@ -5693,5 +5693,22 @@ export const toolsData = [
         "pricingType": "Open Source (MIT)",
         "pricingPrice": "Free",
         "visitLink": "https://github.com/yylo-dev/yylo"
+    },
+    {
+        "_id": {
+            "$oid": "68d0b7f40a3c9e215f000001"
+        },
+        "number": 407,
+        "title": "Magic Hour",
+        "description": "AI video creation platform for text-to-video, image-to-video, face swap, lip sync, animation, and production API workflows.",
+        "imageURL": "",
+        "categories": [
+            "AI Video Generators",
+            "AI Animation Tools",
+            "AI Developer Tools"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "See website",
+        "visitLink": "https://magichour.ai"
     }
 ]
