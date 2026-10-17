@@ -5710,5 +5710,21 @@ export const toolsData = [
         "pricingType": "Freemium",
         "pricingPrice": "See website",
         "visitLink": "https://magichour.ai"
+    },
+    {
+        "_id": {
+            "$oid": "891fb373904c6ebe0524e709"
+        },
+        "number": 408,
+        "title": "CurlShot",
+        "description": "Screenshot API that turns a URL, HTML or Markdown into a PNG, JPEG, WebP, PDF or scrolling video, with an MCP server so AI agents can see web pages.",
+        "imageURL": "",
+        "categories": [
+            "AI Developer Tools",
+            "AI Automation Tools"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Free plan; paid from $19/month",
+        "visitLink": "https://curlshot.com"
     }
 ]
