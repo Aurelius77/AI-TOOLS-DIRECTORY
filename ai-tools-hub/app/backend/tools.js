@@ -5710,5 +5710,21 @@ export const toolsData = [
         "pricingType": "Freemium",
         "pricingPrice": "See website",
         "visitLink": "https://magichour.ai"
+    },
+    {
+        "_id": {
+            "$oid": "1e5b054d73d851a1d8b1fea9"
+        },
+        "number": 408,
+        "title": "deed.page",
+        "description": "Static HTML hosting for AI agents: publish a page or small site to a permanent public URL with one API call, a remote MCP tool, or curl.",
+        "imageURL": "",
+        "categories": [
+            "AI Developer Tools",
+            "AI Agents"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Free; Hobby $3/month",
+        "visitLink": "https://deed.page"
     }
 ]
