@@ -5729,6 +5729,22 @@ export const toolsData = [
     },
     {
         "_id": {
+            "$oid": "20bd9719259cfb5e1b2f9a63"
+        },
+        "number": 409,
+        "title": "MakeImg",
+        "description": "AI photo generator that turns a text prompt or reference photo into a new image, with 11 models and free daily credits.",
+        "imageURL": "",
+        "categories": [
+            "AI Image Generators",
+            "AI Text to image"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Free daily credits; paid plans available",
+        "visitLink": "https://makeimg.ai"
+    },
+    {
+        "_id": {
             "$oid": "1e5b054d73d851a1d8b1fea9"
         },
         "number": 408,
