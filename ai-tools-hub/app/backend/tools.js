@@ -5729,6 +5729,22 @@ export const toolsData = [
     },
     {
         "_id": {
+            "$oid": "e4aa3f64d8620e30bd85e77d"
+        },
+        "number": 410,
+        "title": "Seedance Now",
+        "description": "Multi-model text-to-video and image-to-video studio (Seedance 2.5, Kling 4.0, Wan 3.0), up to 30s at 1080p. Independent, not affiliated with ByteDance.",
+        "imageURL": "",
+        "categories": [
+            "AI Video Generators",
+            "AI Video Tools"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "5 free credits on signup; paid from $14.9/month",
+        "visitLink": "https://seedancenow.com"
+    },
+    {
+        "_id": {
             "$oid": "1e5b054d73d851a1d8b1fea9"
         },
         "number": 408,
