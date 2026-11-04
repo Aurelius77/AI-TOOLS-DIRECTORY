@@ -5742,5 +5742,21 @@ export const toolsData = [
         "pricingType": "Freemium",
         "pricingPrice": "Free; Hobby $3/month",
         "visitLink": "https://deed.page"
+    },
+    {
+        "_id": {
+            "$oid": "7c4965a4ef83d06515ba53c5"
+        },
+        "number": 409,
+        "title": "DisconfirmAI",
+        "description": "AI investment research and reading tool that helps you look for evidence against your thesis before you commit. Daily reading from public sources, earnings and data research, alerts on changes you define, and a personal investment framework.",
+        "imageURL": "",
+        "categories": [
+            "AI Assistant",
+            "AI For Business"
+        ],
+        "pricingType": "Free",
+        "pricingPrice": "Free at present",
+        "visitLink": "https://disconfirmai.com/en"
     }
 ]
