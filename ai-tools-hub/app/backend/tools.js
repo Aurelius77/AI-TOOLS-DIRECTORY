@@ -5742,5 +5742,21 @@ export const toolsData = [
         "pricingType": "Freemium",
         "pricingPrice": "Free; Hobby $3/month",
         "visitLink": "https://deed.page"
+    },
+    {
+        "_id": {
+            "$oid": "0bb8ccebcd5e78cf9ff8311d"
+        },
+        "number": 409,
+        "title": "DDScore",
+        "description": "Cross-checks pitch decks, financial models, and supporting documents against public sources for first-pass private-company due diligence.",
+        "imageURL": "",
+        "categories": [
+            "Finance AI",
+            "AI For Business"
+        ],
+        "pricingType": "Paid",
+        "pricingPrice": "See website",
+        "visitLink": "https://www.ddscore.ai/"
     }
 ]
