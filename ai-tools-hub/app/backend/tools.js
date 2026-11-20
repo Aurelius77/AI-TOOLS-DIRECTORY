@@ -5774,5 +5774,21 @@ export const toolsData = [
         "pricingType": "Free",
         "pricingPrice": "Free at present",
         "visitLink": "https://disconfirmai.com/en"
+    },
+    {
+        "_id": {
+            "$oid": "e5458d120311c068d15a4234"
+        },
+        "number": 412,
+        "title": "PawMambo",
+        "description": "Create a short AI dog dance video from a dog photo and a separate dance-reference clip.",
+        "imageURL": "",
+        "categories": [
+            "AI Video Generators",
+            "AI Animation Tools"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "20 one-time credits for new accounts; packs from $6.99",
+        "visitLink": "https://pawmambo.com/"
     }
 ]
