@@ -5729,9 +5729,25 @@ export const toolsData = [
     },
     {
         "_id": {
+            "$oid": "20bd9719259cfb5e1b2f9a63"
+        },
+        "number": 409,
+        "title": "MakeImg",
+        "description": "AI photo generator that turns a text prompt or reference photo into a new image, with 11 models and free daily credits.",
+        "imageURL": "",
+        "categories": [
+            "AI Image Generators",
+            "AI Text to image"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Free daily credits; paid plans available",
+        "visitLink": "https://makeimg.ai"
+    },
+    {
+        "_id": {
             "$oid": "1e5b054d73d851a1d8b1fea9"
         },
-        "number": 408,
+        "number": 410,
         "title": "deed.page",
         "description": "Static HTML hosting for AI agents: publish a page or small site to a permanent public URL with one API call, a remote MCP tool, or curl.",
         "imageURL": "",
@@ -5745,9 +5761,25 @@ export const toolsData = [
     },
     {
         "_id": {
+            "$oid": "7c4965a4ef83d06515ba53c5"
+        },
+        "number": 411,
+        "title": "DisconfirmAI",
+        "description": "AI investment research and reading tool that helps you look for evidence against your thesis before you commit. Daily reading from public sources, earnings and data research, alerts on changes you define, and a personal investment framework.",
+        "imageURL": "",
+        "categories": [
+            "AI Assistant",
+            "AI For Business"
+        ],
+        "pricingType": "Free",
+        "pricingPrice": "Free at present",
+        "visitLink": "https://disconfirmai.com/en"
+    },
+    {
+        "_id": {
             "$oid": "e5458d120311c068d15a4234"
         },
-        "number": 409,
+        "number": 412,
         "title": "PawMambo",
         "description": "Create a short AI dog dance video from a dog photo and a separate dance-reference clip.",
         "imageURL": "",
