@@ -5747,7 +5747,7 @@ export const toolsData = [
         "_id": {
             "$oid": "1e5b054d73d851a1d8b1fea9"
         },
-        "number": 408,
+        "number": 410,
         "title": "deed.page",
         "description": "Static HTML hosting for AI agents: publish a page or small site to a permanent public URL with one API call, a remote MCP tool, or curl.",
         "imageURL": "",
@@ -5763,7 +5763,7 @@ export const toolsData = [
         "_id": {
             "$oid": "7c4965a4ef83d06515ba53c5"
         },
-        "number": 409,
+        "number": 411,
         "title": "DisconfirmAI",
         "description": "AI investment research and reading tool that helps you look for evidence against your thesis before you commit. Daily reading from public sources, earnings and data research, alerts on changes you define, and a personal investment framework.",
         "imageURL": "",
