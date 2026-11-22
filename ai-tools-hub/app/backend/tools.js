@@ -1,6 +1,20 @@
 export const toolsData = [
     {
         "_id": {
+            "$oid": "492bb03f469fa272961bb806"
+        },
+        "title": "Reletter",
+        "description": "Detect and edit English and Chinese text in screenshots, menus, and product photos. Standard browser editing and watermarked previews are free. Clean PNG exports and optional Pro redraw use credits.",
+        "imageURL": "https://aiedittextinimage.com/examples/menu-photo-before.webp",
+        "categories": [
+            "AI Image Editing"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Credit packs from $4.99",
+        "visitLink": "https://aiedittextinimage.com/"
+    },
+    {
+        "_id": {
             "$oid": "66b1fa668e00ede961e42e5c"
         },
         "title": "ElevenLabs",
