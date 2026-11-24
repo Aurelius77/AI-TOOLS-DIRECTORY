@@ -1,4 +1,5 @@
 export const toolsData = [
+    {"_id":{"$oid":"a9c5202611240000a9c50001"},"title":"ChatSequel","description":"Free Chrome and Edge extension that continues ChatGPT replies after a configurable delay, with per-tab controls and context handoff.","imageURL":"","categories":["AI Productivity Tools"],"pricingType":"Free","pricingPrice":"Free extension; ChatGPT usage limits apply","visitLink":"https://vertexforth.com/en/prax9/chatsequel"},
     {
         "_id": {
             "$oid": "66b1fa668e00ede961e42e5c"
