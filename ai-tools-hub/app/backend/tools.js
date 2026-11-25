@@ -5774,5 +5774,21 @@ export const toolsData = [
         "pricingType": "Free",
         "pricingPrice": "Free at present",
         "visitLink": "https://disconfirmai.com/en"
+    },
+    {
+        "_id": {
+            "$oid": "2b23c178c5e4cf12a3f21621"
+        },
+        "number": 412,
+        "title": "Kite",
+        "description": "Design tool your AI agents and your team share. Claude, ChatGPT, Cursor or Codex connect through Kite's hosted MCP server and draw real, editable layers (frames, text, components, auto layout) in the same file the team edits live. Copy any frame to Figma or as HTML, React or Tailwind.",
+        "imageURL": "",
+        "categories": [
+            "AI Developer Tools",
+            "AI Productivity Tools"
+        ],
+        "pricingType": "Freemium",
+        "pricingPrice": "Free; Pro $16/editor/month billed yearly",
+        "visitLink": "https://kite.new"
     }
 ]
